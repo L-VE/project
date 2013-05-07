@@ -1,0 +1,945 @@
+
+@charset "utf-8";
+/* CSS Document */
+
+body
+{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color:#ec4b2e; /*#FFE4C4, ec4b2e*/
+	text-shadow:none;
+	color:#FFF;
+}
+
+
+#loginBody
+{
+	background-color: #ec4b2e;
+}
+
+@font-face 
+{
+    font-family: "avantgarde";
+    src: url(../fonts/avantgardeitcbybt.ttf) format("truetype");
+}
+
+/*---------------------------------------LOGIN.PHP----------------------------------*/
+#mainContainer
+{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	
+}
+
+#loginContainer
+{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	top: 15%;
+	position: absolute;
+}
+
+#loginContainer h1
+{
+	font-size:60px;
+}
+
+#TMLogo
+{
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.Decorative
+{
+	background-color: #01a1af;
+	height: 15px;
+	width: 100%;
+}
+
+
+#decorativeBottom
+{
+	top: 100%;
+	margin-top: -15px;
+	position: absolute;
+}
+
+#loginContainer h1
+{
+	margin: 0;
+	padding: 0;
+	font-family: "avantgarde";
+	text-align: center;
+	color: #FFFFFF;
+}
+
+#login
+{
+	margin: 0;
+	padding: 0;
+	width: 220px;
+	margin: 0 auto;	
+	margin-top: 60px;
+	position: relative;
+}
+
+.alert
+{
+	margin: 0;
+	padding: 0;
+	background-color: #01a1af;
+	font-family: 'Noto Sans', sans-serif;
+	text-align: center;
+	width: 20%;
+	border-radius: 0;
+	border: none;
+	height: auto;
+	position: absolute;
+	/*left: 40%;
+	top: 55%;*/
+	left: 32%;
+	top: 34%;
+	text-shadow: none;
+}
+
+
+
+#feedback .alert-danger, .alert-error {
+	padding: 10px;
+	background-color: #01a1af;
+	font-family: 'Noto Sans', sans-serif;
+	text-align: center;
+	width: 30%;
+	margin: 0 auto;
+	border-radius: 0;
+	border: none;
+	height: auto;
+	/*left: 40%;
+	top: 55%;*/
+	left: 32%;
+	top: 34%;
+	text-shadow: none;
+
+}
+
+.alert p
+{
+	padding: 10px;
+	color: #FFFFFF;
+	line-height: 17px;
+}
+
+#login fieldset input
+{
+	border: none;
+	border-radius: 0;
+	width: 220px;
+	margin: 0;
+	padding: 0;
+	height: 30px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.loginButton
+{
+	background-color: #01a1af; 
+	border: none;
+	color: #FFFFFF;
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+.customButton:disabled
+{
+	background-color: #01a1af; 
+	opacity:0.50;
+}
+.customButton
+{
+	padding:5px;
+}
+/*------END LOGIN------*/
+
+
+/*-- homescreen_admin.php, homescreen_teacher.php, homescreen_student.php --*/
+
+/*--------------------HOMESCREEN ADMIN----------------------*/
+/*-------------------ADMIN NAV-------------------------*/
+
+
+#adminNav ul
+{
+	color:#FFF;
+	font-size:15px;
+	float: left;
+	/*background-color: green;*/
+	margin: 0;
+	padding: 0;
+}
+
+#adminNav ul li
+{
+	margin: 0;
+	padding: 0;
+}
+
+#adminNav .navbar-inner
+{
+	background:#009cab;
+	/*border-bottom: 1px solid #FFF;*/
+}
+
+.navbar .divider-vertical {
+	border:none;
+}
+
+.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus 
+{
+	color:#FFF;
+	background:#ec4b2e;
+	box-shadow:none;
+}
+
+.navbar .nav>li>a
+{
+	color:#FFF;/*#000;*/
+	text-shadow:none;
+}
+
+.navbar .nav>li>a:hover
+{
+	background:#ec4b2e;
+	color:#FFF;
+}
+
+.navbar-inner, .navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner  {
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+box-shadow: none;
+border: none;
+}
+
+/*-------ADMIN NAV END------*/
+
+/*#009cab*/
+ 
+/*ul#adminList
+{
+	width: 100%;
+	margin: 0 auto;
+	height: auto;
+	overflow: hidden;
+}*/
+ul#adminList, ul#teacherList, ul#studentList
+{
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 10%;
+	overflow: hidden;
+}
+
+ul#teacherList, ul#studentList
+{
+	width: 60%;
+}
+
+ul#teacherList li
+{
+	margin: 0;
+	padding: 0;
+	list-style:none;
+	text-decoration:none;
+	float: left;
+	margin: 0 9%;
+	width: 15%;
+	display: block;
+	/*position: relative;*/
+	height: auto;
+}
+
+ul#studentList li
+{
+	margin: 0;
+	padding: 0;
+	list-style:none;
+	text-decoration:none;
+	float: left;
+	width: 15%;
+	margin: 0 9.15%;
+	display: block;
+	/*position: relative;*/
+	height: auto;
+	
+}
+
+ul#adminList li
+{
+	margin: 0;
+	padding: 0;
+	list-style:none;
+	text-decoration:none;
+	float: left;
+	margin: 0 6.66%;
+	width: 20%;
+	display: block;
+	/*position: relative;*/
+	/*background-color:#0F0;*/
+	height: auto;
+}
+
+ul#adminList li img, ul#teacherList li img, ul#studentList li img
+{
+	height: auto;
+	width: 100%;
+	display: block;
+}
+
+
+ul#adminList a, ul#teacherList a, ul#studentList a
+{
+	/*position: absolute;*/
+	display: block;
+	width: 100%;
+	/*text-indent: -9999px;*/
+	text-align:center;
+	/*color:#FFF;
+	font-size:20px;*/
+	text-decoration:none;
+	height: auto;
+}
+
+ul#teacherList .courseStyle, ul#studentList .courseStyle
+{
+	margin-top:1%;
+}
+
+
+ul#teacherList .courseAddStyle, ul#studentList .courseAddStyle
+{
+	padding-top:4%;
+}
+
+#actions span.buttonText
+{
+	text-align: center;
+	margin-top: 4px;
+	display: block;
+	color:#FFF;
+	font-size:20px;
+}
+
+
+/*---------------------------------------end homescreen styles----------------------------------*/
+
+/*---------------------------------------forms to add/delete teachers, students, absences, courses----------------------------------*/
+.customHeight
+{
+	padding-bottom:20px;
+}
+
+/*-- addTeacher.php, addStudentd.php, deleteTeacher.php --*/
+#addTeacherForm .loginButton:disabled
+{
+	background-color:#01a1af;
+	opacity: 0.7;
+}
+
+
+#addTeacherForm input, #addstudents input
+{
+	text-align:center;
+}
+
+#btnCreateAbsence, #btnAddTeacherCourse
+{
+	margin-top:5px;
+	width:220px;
+}
+
+#addTeacher , #deleteTeacher, #addStudent, #addTeacherAbsences, #viewStudents, #getTeacherAbsences, #getStudentAbsences, #addCourse
+{
+	height: 200px; 
+	/*-khtml-opacity:.60; 
+ 	-moz-opacity:.60; 
+ 	-ms-filter:"alpha(opacity=60)";
+  	filter:alpha(opacity=60);
+  	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.60);
+  	opacity:.60;  */
+	margin: 0 auto;
+	background-repeat:no-repeat;
+}
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+margin-bottom: 10px;
+}
+
+#aroundResults 
+{
+
+	/*margin-left:30%; */
+	 margin-top:8%;
+	 text-align:center;
+}
+
+#results
+{
+	height:100%;
+		
+}
+
+
+.addTeacherResult, .addAbsenceResult
+{
+	width:220px;
+	text-align:center;
+	margin:0 auto;
+}
+
+#btnCreateTeacher
+{
+	width:220px;
+	padding: 5px;
+	float:left;
+}
+
+#addTeacherForm input
+{
+	float:none;
+	display:inline-block;
+}
+
+/*-- include_nav_options_admin.php, include_nav_options_teacher.php, include_nav_options_student.php --*/
+#linkList a:hover
+{
+	cursor:pointer;
+}
+
+#helplink a:hover
+{
+	cursor:help;
+}
+
+/*---------------------------------------nav options styles----------------------------------*/
+.addStudentStyle
+{
+	background-image:url(../img/addstudent18px_white.png);
+	width: 18px;
+	height: 19px;
+	margin-top: -3px;
+}
+
+
+.homeStyle
+{
+	background-image:url(../img/home_14X13_white.png);
+	width: 16px;
+	height: 16px;
+	margin-top: 1px;
+}
+
+.addTeacherStyle
+{
+	background-image:url(../img/addteacher_16px_white.png);
+	width: 19px;
+	height: 17px;
+	margin-top: -1px;
+}
+
+.deleteTeacherStyle
+{
+	background-image: url(../img/removeteacher_18px_white.png);
+	width: 18px;
+	height: 16px;
+	margin-top: 1px;
+}
+
+/*-- include_nav_options_teacher.php --*/
+.customLinkStyle
+{
+	display: inline-block;
+	line-height: 14px;
+	vertical-align: text-top;
+	background-repeat:no-repeat;
+}
+.viewStudentsLinkStyle
+{
+	background-image:;
+	width: 16px;
+	height: 12px;
+	margin-top: 3px;
+}
+
+.addAbsencesLinkStyle
+{
+	background-image:url(../img/items_white.png);
+	width: 15px;
+	height: 15px;
+}
+
+.logoutStyle
+{
+	background-image:url(../img/logout_white14px.png);
+		width: 16px;
+	height: 16px;
+	margin-top: 1px;
+}
+
+.helpStyle
+{
+	background-image:url(../img/help_white12px.png);
+		width: 15px;
+	height: 15px;
+	
+	margin-top: 1px;
+}
+
+.viewStudentslink
+{
+	width: 15px;
+	height: 15px;
+}
+
+.overviewStudentsAbsenceslink
+{
+	width: 15px;
+	height: 15px;
+}
+
+.addCourselink
+{
+	width: 15px;
+	height: 15px;
+}
+
+/*---------------------------------------end nav options styles----------------------------------*/
+  
+/*---------------------------------------addStudent.php----------------------------------*/  
+.file_input_textbox
+{
+	float: left;
+}
+
+.file_input_div
+{
+	position: relative; 
+	width: 100px; 
+	height: 23px; 
+	/*overflow: hidden;*/
+}
+
+.file_input_button
+{
+	width: 150px; 
+	height: 30px;
+	position: absolute; 
+	top: 0px;
+	/*background-color: #33BB00;
+	color: #FFFFFF;*/
+	padding: 5px;
+	margin-left: 2px;
+}
+
+/* hier worden right, opacity en font-size zodanig gezet dat ze samenvallen met de input-box voor de filename = soort van fakeuload */
+.file_input_hidden
+{
+	font-size: 7px; 
+	position: absolute; 
+	/*right: 0px; */
+	/*top: 0px; */
+	opacity: 0; 	
+	filter: alpha(opacity=0); 
+	-ms-filter: "alpha(opacity=0)"; 
+	-khtml-opacity: 0; 
+	-moz-opacity: 0;
+	
+}
+
+div#send
+{
+	margin-top:45px;
+	width:auto;
+}
+
+#addstudents input[type="file"]/*,#addstudents input[type="submit"]*/, #addstudents input[type="button"]
+{
+	/*width: 100%;*/
+	cursor:pointer;
+}
+
+#addstudents input[type="submit"]
+{
+	margin-left:20%;
+	margin-right:65%;
+}
+
+
+.btn file_input_button
+{
+	padding:10px;
+}
+
+/*-- bij alle php files --*/
+#notloggedin
+{
+	/*margin:8% 31%;*/
+	color:#FFF;
+	padding:30px;
+	width:30%;
+	line-height:30px;
+	text-align:start;
+	text-shadow:none;
+}
+
+#notloggedin a
+{
+	/*margin:8% 31%;*/
+	color:#FFF;
+	font-weight:bold;
+}
+
+#notloggedin a:hover
+{
+	/*margin:8% 31%;*/
+	color:#FFF;
+	text-decoration:underline;
+}
+
+/*---------------------------------------addTeacher.PHP----------------------------------*/
+div.usernameFeedback
+{
+	display: none;
+	float: right;
+	height: 38px;
+}
+
+#loadingImage, .loadingImageDelete, .loadingImageEdit, .loadingImageSave
+{
+	display:none;
+}
+
+.loadingImageSave
+{
+	float:right;
+	margin-top:-22px;
+	margin-right:4px;
+}
+
+.ok
+{
+	background-color: #F0FEE9;
+	color: #666666;
+	padding:7px;
+	border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+}
+
+.notok
+{
+	background-color: #FFCFCF;
+	color: #801B1B;
+	padding:7px;
+	border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+}
+
+
+legend
+{
+	color:#FFF;
+	border: none;
+}
+/*#aroundTable
+{
+	max-height:250px; 
+	overflow-y: scroll;
+}was voor scrollbar aan tables*/
+
+/*---------------------------------------tables for displaying information about students, courses, absences and teachers----------------------------------*/
+
+#studentTable a, #studentabsenceTable a, #absenceTable a
+{
+	color:#FFF;
+}
+
+
+#addTeacherForm fieldset, #addstudents fieldset, #addAbsenceTeacherForm fieldset, #addAbsenceStudentForm fieldset, #editAbsence fieldset, #addCourseTeacherForm fieldset{
+/*	border: 1px solid #FFF/*#ec4b2e*/
+	/*margin:20px 0px 20px 0px;*/
+	/*width:365px;*/
+	position:relative;
+	display:block;
+	/*padding: 0 10px 10px 10px;*/
+	
+}
+
+#addTeacherForm fieldset legend,#addstudents fieldset legend, #addAbsenceTeacherForm fieldset legend, #addAbsenceStudentForm fieldset legend, #editAbsence fieldset legend, #addCourseTeacherForm fieldset legend{
+	font-weight:bold;
+	/*padding-left:5px;*/
+/*	margin:0px 0px 10px 0px;*/
+	position:relative;
+	/*border-bottom: 1px solid #FFF;/*#ec4b2e*/
+	color:#FFF;
+	border:none;
+}
+
+/*#addTeacherForm label,  #addAbsenceTeacherForm label,  #addAbsenceStudentForm label, #editAbsence label, #addCourseTeacherForm label{
+	display:block;
+	float:left;
+	width:100px;
+	text-align:end;
+	margin-right:10px;
+	text-align:right;
+	padding-right:5px;
+}
+
+/*#teacherTable
+{
+	border-color:#390;
+	border-style:solid;
+	border-width:thick;
+	border-spacing:10px;
+	border-collapse:separate;
+}*/
+
+/*-- deleteTeacher.php --*/
+#teacherTable, #studentTable, #absenceTable, #studentabsenceTable, #courseTable
+{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	min-width:50%;
+	margin: 0 auto;
+	border-collapse:collapse;
+	/*overflow-y: scroll;*/
+}
+
+#teacherTable td, #teacherTable th, #studentTable td, #studentTable th, #absenceTable td, #absenceTable th, #studentabsenceTable td, #studentabsenceTable th, #courseTable th, #courseTable td
+{
+	font-size:1.2em;
+	/*border:1px solid #98bf21;*/
+	/*border:1px solid #01727c;*/
+	border: 1px solid #ec4b2e;
+	padding:3px 7px 2px 7px;
+	color:#000;
+	
+	 color: #FFF;
+	 
+}
+
+#teacherTable th , #studentTable th, #absenceTable th, #studentabsenceTable th, #courseTable th
+{
+	font-size:1.4em;
+	text-align:left;
+	padding-top:5px;
+	padding-bottom:4px;
+	/*background-color:#A7C942;*/
+	background-color: #01727c;
+	color:#fff;
+}
+
+/*#teacherTable tr.alt td , #studentTable tr.alt td, #absenceTable tr.alt td, #studentabsenceTable tr.alt td, #courseTable tr.alt td
+{
+	
+	 color: #FFF;
+	 
+	/*background-color:#EAF2D3;*/
+	/*background-color:#01a1af;
+}*/
+
+#teacherTable tr td , #studentTable tr td, #absenceTable tr td, #studentabsenceTable tr td, #courseTable tr td
+{
+	
+	 color: #FFF;
+	 
+	/*background-color:#EAF2D3;*/
+	background-color:#01a1af;
+}
+
+.cRow
+{
+	cursor:pointer;
+}
+
+.selectedRow
+{
+	border:2px solid #F00;
+}
+
+/*viewAbsences.php*/
+
+#editTr
+{
+	margin: 0 auto;
+}
+
+#editto
+{
+	clear:right;
+	float:none;
+}
+
+#accordion ul
+{
+	margin-left: 15%;
+}
+
+#accordion li
+{ 
+	display: inline-block;
+	list-style-type: none;
+	
+}
+
+<!--  studentAbsences.php-->
+.edit, .delete
+{
+	padding: 5px 5px;
+}
+
+.removeT .loadingImageDelete
+{
+	margin-top: -8px;
+}
+
+
+
+/*-----------------Media Queries--------------*/
+@media only screen and (max-width: 450px)
+{
+	#loginContainer
+	{
+		top: 7.5%;
+	}
+
+	#TMLogo
+	{
+		max-width: 80%;
+		margin-top: 20px;
+	}
+
+	#loginContainer h1
+	{
+
+		font-size: 2.5em;
+	}
+
+	#login
+	{
+		width: 200px;
+		margin-top: 20px;
+	}
+
+	#login fieldset input
+	{
+		width: 200px;
+	}
+	
+
+	
+
+}
+
+@media only screen and (max-width: 700px)
+{
+	ul#adminList
+	{
+		width: 80%;
+		margin-top: 5%;
+	}
+	
+	ul#adminList li
+	{
+		float: none;
+		margin: 5% auto 0 auto;
+		width: 50%;
+	}
+	
+	ul#adminList li img
+	{
+		margin: 0 auto;
+	
+	}
+	
+	#decorativeBottom
+	{
+		top: 0%;
+	}
+	
+	
+	
+	ul#teacherList
+	{
+		width: 80%;
+		margin-top: 5%;
+	}
+	
+	ul#teacherList li
+	{
+		float: none;
+		margin: 5% auto 0 auto;
+		width: 50%;
+	}
+	
+	ul#teacherList li img
+	{
+		margin: 0 auto;
+	
+	}
+	
+	
+	
+	
+	ul#studentList
+	{
+		width: 80%;
+		margin-top: 5%;
+	}
+	
+	ul#studentList li
+	{
+		float: none;
+		margin: 5% auto 0 auto;
+		width: 50%;
+	}
+	
+	ul#studentList li img
+	{
+		margin: 0 auto;
+	
+	}
+}
+
+
+@media only screen and (max-width: 390px)
+{
+	#keyword
+	{
+		clear:right;
+	}
+	
+	#btnSearch, #btnShowAll
+	{
+		float:none;
+		clear:left;
+	}
+	
+}
+
+/* was 767px
+@media (max-width: 700px) {
+body{padding-right:20px;padding-left:20px}.navbar-fixed-top,.navbar-fixed-bottom,.navbar-static-top{margin-right:-20px;margin-left:-20px}.container-fluid{padding:0}.dl-horizontal dt{float:none;width:auto;clear:none;text-align:left}.dl-horizontal dd{margin-left:0}.container{width:auto}.row-fluid{width:100%}.row,.thumbnails{margin-left:0}.thumbnails>li{float:none;margin-left:0}[class*="span"],.uneditable-input[class*="span"],.row-fluid [class*="span"]{display:block;float:none;width:100%;margin-left:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.span12,.row-fluid .span12{width:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.row-fluid [class*="offset"]:first-child{margin-left:0}.input-large,.input-xlarge,.input-xxlarge,input[class*="span"],select[class*="span"],textarea[class*="span"],.uneditable-input{display:block;width:100%;min-height:30px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.input-prepend input,.input-append input,.input-prepend input[class*="span"],.input-append input[class*="span"]{display:inline-block;width:auto}.controls-row [class*="span"]+[class*="span"]{margin-left:0}.modal{position:fixed;top:20px;right:20px;left:20px;width:auto;margin:0}.modal.fade{top:-100px}.modal.fade.in{top:20px}
+  
+}
+
+was 979
+@media(max-width:700px){body{padding-top:0}.navbar-fixed-top,.navbar-fixed-bottom{position:static}.navbar-fixed-top{margin-bottom:20px}.navbar-fixed-bottom{margin-top:20px}.navbar-fixed-top .navbar-inner,.navbar-fixed-bottom .navbar-inner{padding:5px}.navbar .container{width:auto;padding:0}.navbar .brand{padding-right:10px;padding-left:10px;margin:0 0 0 -5px}.nav-collapse{clear:both}.nav-collapse .nav{float:none;margin:0 0 10px}.nav-collapse .nav>li{float:none}.nav-collapse .nav>li>a{margin-bottom:2px}.nav-collapse .nav>.divider-vertical{display:none}.nav-collapse .nav .nav-header{color:#777;text-shadow:none}.nav-collapse .nav>li>a,.nav-collapse .dropdown-menu a{padding:9px 15px;font-weight:bold;color:#777;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}.nav-collapse .btn{padding:4px 10px 4px;font-weight:normal;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}.nav-collapse .dropdown-menu li+li a{margin-bottom:2px}.nav-collapse .nav>li>a:hover,.nav-collapse .nav>li>a:focus,.nav-collapse .dropdown-menu a:hover,.nav-collapse .dropdown-menu a:focus{background-color:#f2f2f2}.navbar-inverse .nav-collapse .nav>li>a,.navbar-inverse .nav-collapse .dropdown-menu a{color:#999}.navbar-inverse .nav-collapse .nav>li>a:hover,.navbar-inverse .nav-collapse .nav>li>a:focus,.navbar-inverse .nav-collapse .dropdown-menu a:hover,.navbar-inverse .nav-collapse .dropdown-menu a:focus{background-color:#111}.nav-collapse.in .btn-group{padding:0;margin-top:5px}.nav-collapse .dropdown-menu{position:static;top:auto;left:auto;display:none;float:none;max-width:none;padding:0;margin:0 15px;background-color:transparent;border:0;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}.nav-collapse .open>.dropdown-menu{display:block}.nav-collapse .dropdown-menu:before,.nav-collapse .dropdown-menu:after{display:none}.nav-collapse .dropdown-menu .divider{display:none}.nav-collapse .nav>li>.dropdown-menu:before,.nav-collapse .nav>li>.dropdown-menu:after{display:none}.nav-collapse .navbar-form,.nav-collapse .navbar-search{float:none;padding:10px 15px;margin:10px 0;border-top:1px solid #f2f2f2;border-bottom:1px solid #f2f2f2;-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.1),0 1px 0 rgba(255,255,255,0.1);-moz-box-shadow:inset 0 1px 0 rgba(255,255,255,0.1),0 1px 0 rgba(255,255,255,0.1);box-shadow:inset 0 1px 0 rgba(255,255,255,0.1),0 1px 0 rgba(255,255,255,0.1)}.navbar-inverse .nav-collapse .navbar-form,.navbar-inverse .nav-collapse .navbar-search{border-top-color:#111;border-bottom-color:#111}.navbar .nav-collapse .nav.pull-right{float:none;margin-left:0}.nav-collapse,.nav-collapse.collapse{height:0;overflow:hidden}.navbar .btn-navbar{display:block}.navbar-static .navbar-inner{padding-right:10px;padding-left:10px}}
+
+*/
